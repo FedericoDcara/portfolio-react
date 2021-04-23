@@ -1,11 +1,112 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin:0;
+  padding: 0;
 }
+
+.sidebar{
+  padding-top: 3em;
+  padding-bottom: 40px;
+  float: left;
+  width: 300px;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 1001;
+  background: #f2f3f7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  height: 100%;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.SidebarList{
+  height:auto;
+  padding:0;
+  width: 100%;
+  
+}
+
+.SidebarList .row{
+  width: 100%;
+  height: 46px;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color:black;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-bottom: 15px;
+}
+.SidebarList .row:hover{
+  cursor:pointer;
+  background-color: #c9c9cc;
+}
+.row #icon{
+  flex: 30%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  padding-left: 48px;
+  font-family:  'Quicksand', sans-serif;
+}
+.row #title{
+  flex: 70%;
+  font-size: 12px;
+}
+
+.autor-img{
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  display:flex;
+}
+.autor-name{
+ text-align: center;
+ font-size: 19px;
+ font-family:-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+}
+.autor-mail{
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-size: 11px;
+  display:block;
+  text-decoration: none;
+}
+
+.autor-job{
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 12px;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+}
+
+.footer {
+  font-size: 11px;
+  text-align: center;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+ 
+  width: 100%;
+}
+.SocialRow{
+  list-style-type: none;
+  flex: 30%;
+  display: grid;
+  padding-right: 50px;
+  place-items: center;
+  cursor: pointer;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
